@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <title>cahndra</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="chandra-logo.png"></div>
+        <div class="menu_logo"><i class="fa-solid fa-bars"></i></div>
+        <div class="menubar"> 
+            <a href="index.htm">Home</a>
+            <a href="shop.htm">Shop</a>
+            <a href="service.htm">Services</a>
+            <a href="reviews.htm">Reviews</a>  
+            <a href="contact.htm">Contact</a>
+        </div>
+    </nav>
+     
+        <div class="page1">
+            <div class="heading" >
+                <h2>Welcome to</h2><hr class="hr1">    
+                <h1 style="color: rgba(152, 152, 152, 0.55);">Chandra</h1>
+                <h1>Computer</h1>
+                <div class="para1">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Chandrakant Rasaliya is the owner of the chandra computer . Who have experience of 15 year of Computer 
+                    teacher and also continue to work on the shop scence last 8 years. 
+                   
+                </div>
+            </div>
+            <div class="img_mama">
+                <img src="mama.png">
+            </div>
+        </div>  
+
+        <div class="page2">
+            <h2 class="page2h2">Why Choose Chandra Computers?</h2>   
+            <div class="para2">
+                <b>Experienced Team:</b><br> Our knowledgeable staff is ready to assist you with any technical inquiries and provide expert advice.<br><br>
+<b>Reliable Service:</b> <br>We pride ourselves on delivering timely and reliable service for all your electronic needs.<br><br>
+<b>Customer Satisfaction:</b><br> Your satisfaction is our top priority. We strive to exceed your expectations in every interaction.
+            </div>
+        </div>
+
+        <div class="page3">
+            <h2 class="page3h3">Thanks!</h2>   
+            <div class="para3">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Visit us today and experience the Chandra Computers difference! We are conveniently located in Chandkheda.
+                If you have any questions or would like to schedule a repair service, feel free to contact us at Chandra Computers.
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Thank you for choosing Chandra Computers as your trusted electronics partner!
+            </div>
+        </div>
+
+        <footer>
+            <h1 class="footer-head">Please visit</h1>
+            <div class="content">
+                <div class="f_logo"><h1 style="color: rgba(255, 255, 255, 0.299);">Chandra</h1><h1>Computer</h1></div>
+                <div class="f_contect">Contect : 7621933705<br>
+                    Owner :  Chandrakant Rasaliya<br>
+                    Email :  chandracomputer@gmail.com<br>
+                    Google page :  https://chandracompute.com<br>
+                    Address :  56,1st Floor, Nakshatra Arcade, IOC Rd,
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chandkheda, Ahmedabad, Gujarat 382424, India
+            </div>
+        </footer>
+            
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+         
+    <script>
+
+        if(window.innerWidth < 800){
+            alert("please zoom out");
+        }         
+
+        let a = document.querySelector(".menubar");
+        if(window.innerWidth <= 680){
+        a.style.display = "none"
+        }
+        $(document).ready(function(){
+        $("i").click(function(){
+            $(a).toggle(400);
+        });
+    });
+    </script>
+</body>
+</html>

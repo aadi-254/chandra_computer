@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style:normal;
+}
+
+/**  navbar  **/
+nav{
+    width: 100%;
+    height: 13%;
+    z-index: 1000;
+    background-color: black;
+    color: white;
+    position: absolute;
+    position: fixed;
+    display: flex;
+}
+nav .logo{
+    position: absolute;
+    left: 5%;   
+    height: 90%;
+    width: 28%; 
+}
+nav .logo img{
+    height: 60%;
+    width: 35%;
+    margin-top: 3%;  
+}
+.fa-solid, .fas {
+    font-weight: 900;
+    display: none;
+}
+
+nav .menubar{
+    position: absolute;
+    right: 18%;
+    display: flex;
+    gap: 18%;
+    justify-content: center;
+    align-items: center;
+}
+nav .menubar a{
+    height: 90%;
+    margin-top: 10%;
+    padding-bottom: 10px; 
+    width: 80%;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+
+}
+nav .menubar a:hover{
+    color: rgba(255, 255, 255, 0.548);
+    border-bottom:2px solid rgb(0, 229, 255);
+}
+
+
+/****** head **********/
+
+.head{
+    font-size: 50px;
+    margin-bottom: 3%;
+    padding-left: 6%;
+    position: absolute;
+    text-align:center;
+    top: 10%;
+    background-color: black;
+    padding-top: 2%;
+    color: white;
+    height: 30%;
+    width: 101%;
+    background: url('headbg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+body{
+    overflow-x: hidden;
+}
+/****** body **********/
+.body{
+    position: absolute;
+    top: 40%;
+    height: 100%;
+    width: 100%;
+
+}
+
+.body h1{
+    font-size: 55px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.body .ssreview{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    display: flex;
+    width: 84%;
+    gap: 6%;
+    height: 80%;
+}
+.ssreview img{
+    position: absolute;
+    top: 10%;
+    height: 65%;
+    width: 35%;
+}
+
+.ssreview .reviewpara{
+    position: absolute;
+    right: 7%;
+    top: 13%;
+    width: 50%;
+    height: 100%;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+/**** parallax **/
+.parallax {
+    position: absolute;
+    top: 140%;
+    height: 80%;
+    width: 100%;
+    background : url('bgg2.jpeg');
+    opacity: 0.9; /* Change the URL to your image */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+/*** body 2 ***/
+.body2{
+    position: absolute;
+    top: 220%;
+    height: 100%;
+    width: 100%;
+
+}
+
+.body2 h1{
+    font-size: 65px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.body2 .ssreview2{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    display: flex;
+    width: 84%;
+    gap: 6%;
+    height: 80%;
+}
+.ssreview2 iframe{
+    position: absolute;
+    top: 20%;
+    height: 70%;
+    width: 30%;
+    right: 10%;
+}
+
+.ssreview2 .reviewpara2{
+    position: absolute;
+    left: 0%;
+    top: 23%;
+    width: 50%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+
+/****************************************** media *******************************/
+@media screen and (max-width:680px) {
+    
+    nav{
+        z-index: 10;
+        width: 110%;
+    } 
+    
+    
+nav .logo{
+    position: absolute;
+    left: 5%;   
+    height: 90%;
+    width: 28%; 
+}
+nav .logo img{
+    height: 60%;
+    width: 100%;
+    margin-top: 15%;
+    
+}
+.fa-solid, .fas {
+    font-weight: 900;
+    display: flex;
+    font-size: 35px;
+    padding: 5%;
+    position: absolute;
+    color: rgb(146, 144, 144);
+    right: 14%;
+    z-index: 1001;
+}
+
+nav .menubar{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    left: 0%;
+}
+nav .menubar a{
+    margin: 18% 0% 18% 0%;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+/*style="padding-bottom: 30%;"    for review option*/
+nav .menubar a:hover{
+    color: rgba(255, 0, 0, 0.244);
+    border-bottom: rgb(255, 0, 0);
+}
+
+
+    
+
+    /****** body ****/
+    .head{
+        color: white;
+        height: 30%;
+        width: 135%;
+        position: relative;
+    }
+
+
+    /****** body **********/
+    .body{
+        width: 125%;
+        height: 150%;
+    }
+    .body h1{
+        position: relative;
+        top: 4%;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .body .ssreview{
+        top: 25%;
+        left: 4%;
+        flex-direction: column;
+        width: 90%;
+        gap: 6%;
+        height: 100%;
+    }
+    .ssreview img{
+        top: 44%;
+        height: 28%;
+        left: 8%;
+        width: 100%;
+    }
+
+    .ssreview .reviewpara{
+        right: 0%;
+        left: 5%;
+        top: 2%;
+        width: 100%;
+        height: 100%;
+        font-size: 26px;
+        font-weight: 500;
+        animation: anime1 linear 1s;
+        animation-delay: 160ms;
+        
+    }
+
+    /**** parallax **/
+    .parallax {
+        display: none;
+    }
+
+
+
+
+    /*** body 2 ***/
+    .body2{
+        top: 190%;
+        height: 100%;
+        width: 120%;
+        background: rgb(255, 255, 255);
+
+    }
+
+    .body2 h1{
+        font-size: 45px;
+        position: absolute;
+        top: 10%;
+        left: 13%;
+    }
+
+    .body2 .ssreview2{
+        position: absolute;
+        top: 25%;
+        left: 13%;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 6%;
+        height: 80%;
+    }
+    .ssreview2 iframe{
+        top: 100%;
+        height: 30%;
+        width: 80%;
+        right: 10%;
+    }
+
+    .ssreview2 .reviewpara2{
+        left: 0%;
+        top: 23%;
+        width: 90%;
+        height: 60%;
+        font-size: 30px;
+        animation: anime linear;
+        animation-timeline: view();
+        animation-range: entry 6% contain 30%;
+    }
+    @keyframes anime {
+        0%{
+            opacity: 0.3;
+           
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes anime1 {
+        0%{
+            opacity: 0.3;
+            transform: translateY(150px);
+           
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}

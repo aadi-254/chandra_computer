@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style:normal;
+}
+
+/**  navbar  **/
+nav{
+    width: 100%;
+    height: 13%;
+    z-index: 1000;
+    background-color: black;
+    color: white;
+    position: absolute;
+    position: fixed;
+    display: flex;
+}
+nav .logo{
+    position: absolute;
+    left: 5%;   
+    height: 90%;
+    width: 28%; 
+}
+nav .logo img{
+    height: 60%;
+    width: 35%;
+    margin-top: 3%;  
+}
+.fa-solid, .fas {
+    font-weight: 900;
+    display: none;
+}
+
+nav .menubar{
+    position: absolute;
+    right: 18%;
+    display: flex;
+    gap: 18%;
+    justify-content: center;
+    align-items: center;
+}
+nav .menubar a{
+    height: 90%;
+    margin-top: 10%;
+    padding-bottom: 10px; 
+    width: 80%;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+
+}
+nav .menubar a:hover{
+    color: rgba(255, 255, 255, 0.548);
+    border-bottom:2px solid rgb(0, 229, 255);
+}
+
+/**** body ***/
+body{
+    overflow-x:hidden ;
+}
+/**** page 1****/
+
+.page1{
+    position: absolute;
+    top: 5%;
+    height: 110%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    display: flex;
+}
+
+.heading{
+    position: absolute;
+    line-height: 190%;
+    top: 20%;
+    left: 10%;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+}
+.heading h2{
+    font-size: 40px;
+}
+.hr1{
+    width: 30%;
+}
+.para1{
+    margin-top: 3%;
+    font-size: 25px;
+    color: white;
+    width:40%;
+    line-height: 40px;
+    text-align: justify;
+}
+
+.img_mama{
+    position: absolute;
+    height: 30%;
+    width: 30%;
+    top: 30%;
+    right: 10%;
+}
+.img_mama img{
+    position: relative;
+    height:140%;
+    width: 80%;
+}
+
+/********* page 2 ******/
+
+.page2{
+    position: absolute;
+    top: 110%;
+    height: 100%;
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+.page2 h2{
+    position: absolute;
+    left: 10%;
+    top:14%;
+    font-size: 60px;
+    text-align: left;
+}
+.page2 .para2{
+    position: absolute;
+    right: 6%;
+    top:30%;
+    font-size: 29px;
+    text-align: justify;
+    width: 60%;
+    font-weight: 400;
+}
+
+/***** page 3 ****/
+
+.page3{
+    position: absolute;
+    top: 220%;
+    height: 100%;
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+.page3 h2{
+    position: absolute;
+    right: 20%;
+    top:8%;
+    font-size: 60px;
+    text-align: left;
+}
+.page3 .para3{
+    position: absolute;
+    left: 6%;
+    top:35%;
+    font-size: 29px;
+    text-align: justify;
+    width: 60%;
+    font-weight: 400;
+}
+
+/****** footer **********/
+footer{
+    position: absolute;
+    top: 340%;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background: black;
+}
+footer h1{
+    
+    font-size: 50px;
+    text-align: center;
+    margin-top: 5%;
+}
+footer .content{
+    position: absolute;
+    top: 5%;
+    height: 90%;
+    width: 100%;
+    display: flex;
+}
+.content .f_logo{
+    position: absolute;
+    top: 32%;
+    left: 15%;
+}
+.f_logo h1{
+    font-size: 70px;
+    line-height: 125%;
+}
+.content .f_contect{
+    position: absolute;
+    top: 34%;
+    line-height: 175%;
+    right: 15%;
+    font-size: 25px;
+}
+
+
+
+
+/****************************************** media *******************************/
+
+
+
+
+@media screen and (max-width:680px) {
+nav{
+    z-index: 10;
+    width: 120%;
+} 
+
+nav .logo{
+    position: absolute;
+    left: 5%;   
+    height: 90%;
+    width: 28%; 
+}
+nav .logo img{
+    height: 60%;
+    width: 100%;
+    margin-top: 15%;
+    
+}
+.fa-solid, .fas {
+    font-weight: 900;
+    display: flex;
+    font-size: 35px;
+    padding: 5%;
+    position: absolute;
+    color: rgb(146, 144, 144);
+    right: 14%;
+    z-index: 1001;
+}
+
+nav .menubar{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    left: 0%;
+}
+nav .menubar a{
+    margin: 18% 0% 18% 0%;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+/*style="padding-bottom: 30%;"    for review option*/
+nav .menubar a:hover{
+    color: rgba(255, 0, 0, 0.244);
+    border-bottom: rgb(255, 0, 0);
+}
+
+
+/**** body ***/
+body{
+    overflow-x: hidden;
+}
+/**** page 1****/
+body .page1{
+    height: 140%;
+    width: 125%;
+    display: flex;
+    flex-direction: column;
+}
+.heading {
+    line-height: 200%;
+    top: 13%;
+    left: 8%;
+    font-size: 35px;
+}
+.heading h2{
+    font-size: 29px;
+}
+.hr1{
+    width: 55%;
+}
+.para1{
+    margin-top: 3%;
+    font-size: 24px;
+    color: white;
+    width:90%;
+    line-height: 40px;
+    text-align: justify;
+}
+
+.img_mama{
+    height: 70%;
+    width: 80%;
+    top: 70%;
+    animation: anime linear;
+    animation-timeline: view();
+    animation-range-end: top 100px;
+    animation-range-start: top 120px;
+}
+.img_mama img{
+    position: relative;
+    height:40%;
+    width: 90%;
+}
+
+/********* page 2 ******/
+.page2{
+    top: 151%;
+}
+.page2 h2{
+    left: 15%;
+    top:8%;
+    font-size: 40px;
+    text-align: center;
+}
+.page2 .para2{
+    right: 2%;
+    top:35%;
+    left: 14%;
+    font-size: 25px;
+    width: 90%;
+    font-weight: 400;
+    animation: anime linear;
+    animation-timeline: view();
+    animation-range: entry 10% contain 90%;
+}
+
+/********* page 3 ******/
+.page3{
+    top: 282%;
+}
+.page3 h2{
+    left: 15%;
+    top:10%;
+    font-size: 55px;
+    text-align: justify;
+}
+.page3 .para3{
+    right: 2%;
+    top:25%;
+    left: 18%;
+    font-size: 25px;
+    width: 90%;
+    font-weight: 400;
+    animation: anime linear;
+    animation-timeline: view();
+    animation-range: entry 6% contain 30%;
+}
+/****** footer **********/
+footer{
+    width: 125%;
+    top: 425%;
+    height: 120%;
+}
+footer h1{
+    margin-top: 10%;
+}
+footer .content{
+    top: 3%;
+    height: 90%;
+    width: 100%;
+}
+.content .f_logo{
+    top: 17%;
+    left: 10%;
+}
+.f_logo h1{
+    font-size: 70px;
+    line-height: 100%;
+}
+.content .f_contect{
+    position: absolute;
+    top: 54%;
+    line-height: 145%;
+    right: 0%;
+    margin: 0% 0% 0% 6%;
+    font-size: 25px;
+}
+
+
+@keyframes anime {
+    0%{
+        opacity: 0;
+       
+    }
+    50%{
+        opacity: 1;
+        /*scale:2;*/
+        
+    }
+    100%{
+        opacity: 0.8;
+    }
+}
+ 
+}

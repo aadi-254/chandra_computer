@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style:normal;
+}
+
+/**  navbar  **/
+nav{
+    width: 100%;
+    height: 13%;
+    z-index: 1000;
+    background-color: black;
+    color: white;
+    position: absolute;
+    position: fixed;
+    display: flex;
+}
+nav .logo{
+    position: absolute;
+    left: 5%;   
+    height: 90%;
+    width: 28%; 
+}
+nav .logo img{
+    height: 60%;
+    width: 35%;
+    margin-top: 3%;  
+}
+.fa-solid, .fas {
+    font-weight: 900;
+    display: none;
+}
+
+nav .menubar{
+    position: absolute;
+    right: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18%;
+}
+nav .menubar a{
+    height: 90%;
+    margin-top: 10%;
+    padding-bottom: 10px; 
+    width: 80%;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+
+}
+nav .menubar a:hover{
+    color: rgba(255, 255, 255, 0.548);
+    border-bottom:2px solid rgb(0, 229, 255);
+}
+
+
+/****** body **********/
+body{
+    overflow-x: hidden;
+}
+
+.head{
+    font-size: 50px;
+    margin-bottom: 3%;
+    padding-left: 6%;
+    position: absolute;
+    text-align:center;
+    top: 10%;
+    background-color: black;
+    padding-top: 2%;
+    color: white;
+    height: 30%;
+    width: 100%;
+    background: url('headbg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body3{
+    height: 120%;
+    width: 94%;
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.body3 .service{
+    width: 60%;
+    height: 95%;
+}
+.body3 .service p{
+    font-size: 23px;
+    font-weight: 400;
+    text-align: justify;
+
+}
+.body3 .service .list{
+    position: absolute;
+    top: 30%;
+    line-height: 200%;
+    width: 50%;
+}
+.body3 .service .list h1{
+    margin-bottom: 8%;
+    text-decoration: underline;
+    font-size: 46px;
+    font-weight: bolder;
+}
+.body3 .img{
+    height: 50%;
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    background: url("service1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.parallax {
+    position: absolute;
+    top: 196%;
+    height: 500px;
+    width: 100%;
+    background : url('bgg.png');
+    opacity: 0.9; /* Change the URL to your image */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+ /******** body 4 ********/
+
+.body4{
+    height: 120%;
+    width: 90%;
+    position: absolute;
+    top: 250%;
+    left: 10%;
+    color: black;
+    display: flex;
+    
+}
+.body4 .para{
+    position: absolute;
+    top: 26%;
+    right: 2%;
+    width: 50%;
+    height: 100%;
+    line-height: 250%;
+}
+.body4 .para h1{
+    font-size: 55px;
+    margin-bottom: 8%;
+}
+.body4 .para p b{
+    font-size: 32px;
+}
+.body4 .para p {
+    font-size: 28px;
+    
+}
+
+.body4 .img2{
+    position: absolute;
+    top: 39%;
+    left: 0%;
+    width: 40%;
+    height: 40%;
+    background: url("service2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/****************************************** media *******************************/
+@media screen and (max-width:680px) {
+    nav{
+        z-index: 10;
+        width: 113%;
+    } 
+
+    nav .logo{
+        position: absolute;
+        left: 5%;   
+        height: 90%;
+        width: 28%; 
+    }
+    nav .logo img{
+        height: 60%;
+        width: 100%;
+        margin-top: 15%;
+        
+    }
+    .fa-solid, .fas {
+        font-weight: 900;
+        display: flex;
+        font-size: 35px;
+        padding: 5%;
+        position: absolute;
+        color: rgb(146, 144, 144);
+        right: 14%;
+        z-index: 1001;
+    }
+    
+    nav .menubar{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        left: 0%;
+    }
+    nav .menubar a{
+        margin: 18% 0% 18% 0%;
+        font-size: 30px;
+        text-align: center;
+        color: black;
+    }
+    /*style="padding-bottom: 30%;"    for review option*/
+    nav .menubar a:hover{
+        color: rgba(255, 0, 0, 0.244);
+        border-bottom: rgb(255, 0, 0);
+    }
+    
+    /****** body ****/
+
+    body{
+        overflow-x: hidden;
+    }
+    .head{
+        margin-bottom: 3%;
+        padding-top: 0%;
+        color: white;
+        height: 30%;
+        width: 135%;
+    }
+    .head h1{
+        position: absolute;
+        top: -30%;   
+    }
+
+    /*** body 3 ***/
+
+    .body3{
+        height: 180%;
+        width: 120%;
+        top: 50%;
+        left: 6%;
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+    .body3 .service{
+        width: 96%;
+        height: 95%;
+    }
+    .body3 .service p{
+        font-size: 30px;
+        animation: anime linear;
+    animation-timeline: view();
+    animation-range: entry 6% contain 30%;
+
+        
+    
+    }
+
+    .body3 .service .list{
+        top: 90%;
+        line-height: 300%;
+        width: 95%;
+    }
+    .body3 .service .list h1{
+        margin-bottom: 20%;
+        line-height: 150%;
+        margin-top: 16%;
+    }
+    .body3 .img{
+        height: 30%;
+        width: 100%;
+        position: absolute;
+        top: 45%;
+        right: 3%;
+        animation: anime linear;
+    animation-timeline: view();
+    animation-range: entry 6% contain 30%;
+
+    }
+    
+    .parallax{
+        display: none;
+    }
+
+    
+
+ /******** body 4 ********/
+
+.body4{
+    height: 130%;
+    width: 110%;
+    position: absolute;
+    top: 420%;
+    left: 10%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+.body4 .para{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    width: 100%;
+    height: 100%;
+    line-height: 250%;
+    animation: anime linear;
+    animation-timeline: view();
+    animation-range: entry 6% contain 30%;
+
+}
+.body4 .para h1{
+    font-size: 50px;
+    line-height: 130%;
+    margin-bottom: 6%;
+}
+.body4 .img2{
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    width: 100%;
+    height: 30%;
+    background-color: blue;
+
+}
+    @keyframes anime {
+        0%{
+            opacity: 0.3;
+           
+        }
+        100%{
+            opacity: 1;
+            /*scale:2;*/
+            
+        }
+    }
+     
+}
+
+
+
+ 
+
+

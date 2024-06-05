@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style:normal;
+}
+
+/**  navbar  **/
+nav{
+    width: 100%;
+    height: 13%;
+    z-index: 1000;
+    background-color: black;
+    color: white;
+    position: absolute;
+    position: fixed;
+    display: flex;
+}
+nav .logo{
+    position: absolute;
+    left: 5%;   
+    height: 90%;
+    width: 28%; 
+}
+nav .logo img{
+    height: 60%;
+    width: 35%;
+    margin-top: 3%;  
+}
+.fa-solid, .fas {
+    font-weight: 900;
+    display: none;
+}
+
+nav .menubar{
+    position: absolute;
+    right: 18%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 18%;
+}
+nav .menubar a{
+    height: 90%;
+    margin-top: 10%;
+    padding-bottom: 10px; 
+    width: 80%;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+
+}
+nav .menubar a:hover{
+    color: rgba(255, 255, 255, 0.548);
+    border-bottom:2px solid rgb(0, 229, 255);
+}
+
+
+/****** head **********/
+
+.head{
+    font-size: 50px;
+    margin-bottom: 3%;
+    padding-left: 6%;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    background-color: black;
+    padding-top: 2%;
+    color: white;
+    height: 30%;
+    width: 101%;
+    background: url('contacth.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*** body ****/ 
+body{
+    overflow-x:hidden ;
+    background: black;
+}
+.body{
+    height: 60%;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 41%;
+    background: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    padding-top: 10%;
+}
+
+.contact{
+    position: absolute;
+    top:110%;
+    background: black;
+    height: 100%;
+    width: 100%;
+}
+.contact form{
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    background: rgba(255, 255, 255, 0.112);
+    height: 70%;
+    border-radius:10px ;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+form label{
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.384);
+}
+
+form input{
+    height: 7%;
+    padding-left: 2%;
+    font-size: 18px;
+    width: 80%;
+    position: absolute;
+    left: 4%;
+    background: black;
+    color: white;
+    border:0px solid rgb(255, 255, 255);
+    border-radius:5px ;
+    transition-duration: 0.5s;
+}   
+form input:hover{
+    box-shadow: 0 0 2px aqua, 0 0 2px aqua, 0 0 10px aqua, 0 0 26px aqua;
+}
+form .name{
+    top:12%;
+}
+
+form .email{
+    top:32%;
+}
+
+form .number{
+    top: 57%;
+}
+form .address{
+    top: 82%;
+    height: 15%;
+
+}
+
+
+
+
+/****** footer **********/
+footer{
+    position: absolute;
+    top: 230%;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background: black;
+}
+footer h1{    
+    font-size: 50px;
+    text-align: center;
+    margin-top: 5%;
+}
+footer .content{
+    position: absolute;
+    top: 5%;
+    height: 90%;
+    width: 100%;
+    display: flex;
+}
+.content .f_logo{
+    position: absolute;
+    top: 32%;
+    left: 15%;
+}
+.f_logo h1{
+    font-size: 70px;
+    line-height: 125%;
+}
+.content .f_contect{
+    position: absolute;
+    top: 34%;
+    line-height: 175%;
+    right: 15%;
+    font-size: 25px;
+}
+
+
+/****************************************** media *******************************/
+@media screen and (max-width:680px) {
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        z-index: 10;
+        width: 113%;
+    } 
+    
+    nav .logo{
+        position: absolute;
+        left: 5%;   
+        height: 90%;
+        width: 28%; 
+    }
+    nav .logo img{
+        height: 60%;
+        width: 100%;
+        margin-top: 15%;
+        
+    }
+    .fa-solid, .fas {
+        font-weight: 900;
+        display: flex;
+        font-size: 35px;
+        padding: 5%;
+        position: absolute;
+        color: rgb(146, 144, 144);
+        right: 14%;
+        z-index: 1001;
+    }
+    
+    nav .menubar{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        left: 0%;
+    }
+    nav .menubar a{
+        margin: 18% 0% 18% 0%;
+        font-size: 30px;
+        text-align: center;
+        color: black;
+    }
+    /*style="padding-bottom: 30%;"    for review option*/
+    nav .menubar a:hover{
+        color: rgba(255, 0, 0, 0.244);
+        border-bottom: rgb(255, 0, 0);
+    }
+    
+
+    /****** body ****/
+    .head{
+        padding-top: 6%;
+        color: white;
+        height: 30%;
+        width: 115%;
+        font-size: 35px;
+    }
+
+/*** body ****/ 
+
+.body{
+    text-align: justify;
+    padding-top: 10%;
+    width: 100%; 
+    top: 54%;
+}
+
+.contact{
+    top:160%;
+   
+}
+.contact form{
+    background: rgba(255, 255, 255, 0.112);
+    height: 70%;
+    border-radius:10px ;
+    width: 93%;
+    left: 12%;
+    gap: 10%;
+}
+
+form label{
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.384);
+}
+
+form input{
+    width: 85%;
+}   
+
+
+
+
+    
+/****** footer **********/
+    footer{
+    width: 113%;
+    top: 250%;
+    height: 120%;
+    }
+
+    footer h1{
+        margin-top: 10%;
+    }
+    footer .content{
+        top: 3%;
+        height: 90%;
+        width: 100%;
+    }
+    .content .f_logo{
+        top: 17%;
+        left: 10%;
+    }
+    .f_logo h1{
+        font-size: 70px;
+        line-height: 100%;
+    }
+    .content .f_contect{
+        position: absolute;
+        top: 54%;
+        line-height: 145%;
+        right: 0%;
+        margin: 0% 0% 0% 6%;
+        font-size: 25px;
+    }
+    
+    
+}
